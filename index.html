@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-AO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Legado Profissional AO — Carreira, Currículos e Formação</title>
+  <meta name="description" content="Legado Profissional AO — currículos, perfis profissionais, formação, análise de dados e serviços para instituições.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#inicio"><img src="favicon.svg" alt="Legado Profissional AO"> <span>LEGADO <b>PROFISSIONAL</b> AO</span></a>
+  <button class="menu" aria-label="Abrir menu">☰</button>
+  <nav>
+    <a href="#servicos">Serviços</a><a href="#curriculo">Currículo</a><a href="#certificados">Certificados</a>
+    <a href="#perfil">Perfil</a><a href="#videos">Vídeos</a><a href="#comunidade">Comunidade</a>
+    <a class="nav-cta" href="#contacto">Começar</a>
+  </nav>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div>
+    <p class="eyebrow">TECNOLOGIA • EDUCAÇÃO • CARREIRA</p>
+    <h1>Constrói hoje o perfil profissional que abre portas amanhã.</h1>
+    <p class="lead">Cria o teu currículo, organiza o teu perfil, aprende novas competências e solicita serviços profissionais numa única plataforma.</p>
+    <div class="actions">
+      <a class="btn primary" href="#curriculo">Criar meu currículo</a>
+      <a class="btn secondary" href="#servicos">Ver serviços</a>
+    </div>
+    <div class="trust"><span>✓ Experiência simples no telemóvel</span><span>✓ Atendimento em Angola</span><span>✓ Privacidade</span></div>
+  </div>
+  <div class="hero-card">
+    <div class="avatar">LP</div>
+    <h3>Perfil Profissional</h3>
+    <p>Currículo • Formação • Competências • Projetos</p>
+    <div class="mini-chart"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <small>Transforma competências em oportunidades.</small>
+  </div>
+</section>
+
+<section id="servicos" class="section">
+  <div class="section-head"><p class="eyebrow">SERVIÇOS</p><h2>Escolhe o que precisas</h2><p>Cada serviço tem o seu preço e botão próprio. Nesta versão, o pagamento é uma demonstração; a integração real do Express deve ser feita no backend com a API oficial.</p></div>
+  <div class="grid services">
+    <article class="card"><span class="tag">Mais procurado</span><h3>Currículo Profissional</h3><p>Currículo moderno, organizado e pronto para apresentação profissional.</p><strong>2.000 Kz</strong><a class="btn primary" href="#curriculo">Solicitar</a></article>
+    <article class="card"><h3>Serviço Profissional</h3><p>Preparação e processamento de documentação de formações profissionais legítimas.</p><strong>5.000 Kz</strong><a class="btn primary" href="#contacto">Solicitar</a></article>
+    <article class="card"><h3>Ensino Secundário</h3><p>Serviço documental legítimo, dependente da instituição competente.</p><strong>2.000 Kz</strong><a class="btn primary" href="#contacto">Solicitar</a></article>
+    <article class="card"><h3>Ensino Superior</h3><p>Preparação/processamento de documentação legítima através da instituição autorizada.</p><strong>12.000 Kz</strong><a class="btn primary" href="#contacto">Solicitar</a></article>
+    <article class="card"><h3>Instituições Privadas</h3><p>Soluções profissionais para instituições e organizações.</p><strong>15.000 Kz</strong><a class="btn primary" href="#contacto">Solicitar</a></article>
+  </div>
+  <div class="notice"><b>Importante:</b> o Legado Profissional AO não fabrica nem falsifica certificados. Documentos académicos oficiais devem ser emitidos, assinados ou validados pelas instituições competentes.</div>
+</section>
+
+<section id="curriculo" class="section dark">
+  <div class="section-head"><p class="eyebrow">MODELO DE CURRÍCULO</p><h2>Preenche o teu currículo</h2><p>Este formulário é um exemplar visual. Na versão com backend, os dados serão guardados na conta do cliente e poderão gerar um PDF.</p></div>
+  <div class="split">
+    <form class="form" id="cvForm">
+      <label>Nome completo<input id="cvName" required placeholder="Ex.: João Manuel"></label>
+      <label>Profissão / objetivo<input id="cvRole" placeholder="Ex.: Técnico de Informática"></label>
+      <label>Telefone<input id="cvPhone" placeholder="+244 ..."></label>
+      <label>Email<input id="cvEmail" type="email" placeholder="email@exemplo.com"></label>
+      <label>Formação académica<textarea id="cvEdu" placeholder="Curso, instituição e ano"></textarea></label>
+      <label>Experiência profissional<textarea id="cvExp" placeholder="Empresa, função e período"></textarea></label>
+      <label>Competências<textarea id="cvSkills" placeholder="Excel, comunicação, análise de dados..."></textarea></label>
+      <button class="btn primary" type="button" onclick="previewCV()">Pré-visualizar currículo</button>
+    </form>
+    <div class="cv-preview" id="cvPreview">
+      <div class="cv-top"><div class="cv-avatar">CV</div><div><h3>O teu currículo</h3><p>Pré-visualização</p></div></div>
+      <h4>Resumo profissional</h4><p id="pRole">Preenche o formulário para gerar o exemplar.</p>
+      <div class="cv-cols"><div><h4>Formação</h4><p id="pEdu">—</p><h4>Experiência</h4><p id="pExp">—</p></div><div><h4>Competências</h4><p id="pSkills">—</p><h4>Contacto</h4><p id="pContact">—</p></div></div>
+      <div class="watermark">EXEMPLO</div>
+    </div>
+  </div>
+</section>
+
+<section id="certificados" class="section">
+  <div class="section-head"><p class="eyebrow">EXEMPLARES</p><h2>Modelos de certificados</h2><p>Os modelos abaixo são apenas exemplos de design. Não representam certificados académicos oficiais.</p></div>
+  <div class="grid certs">
+    <article class="certificate"><span>EXEMPLO • NÃO OFICIAL</span><h3>CERTIFICADO DE FORMAÇÃO PROFISSIONAL</h3><p>Certifica-se, para fins de exemplo, que</p><h2>Nome do participante</h2><p>concluiu a formação em</p><h3>Análise de Dados</h3><p>Carga horária: 40 horas • Data: 21/08/2026</p><div class="sign">__________________<br>Responsável autorizado</div></article>
+    <article class="certificate"><span>EXEMPLO • NÃO OFICIAL</span><h3>CERTIFICADO DE PARTICIPAÇÃO</h3><p>Certifica-se que</p><h2>Nome do participante</h2><p>participou na atividade</p><h3>Empreendedorismo e Carreira</h3><p>Instituição: Nome da instituição • Data: 21/08/2026</p><div class="sign">__________________<br>Responsável autorizado</div></article>
+  </div>
+</section>
+
+<section id="perfil" class="section dark">
+  <div class="section-head"><p class="eyebrow">PERFIL PROFISSIONAL</p><h2>Mostra o teu potencial</h2></div>
+  <div class="profile-demo"><div class="profile-avatar">LP</div><div><h3>Nome Profissional</h3><p class="gold">Profissional • Estudante • Empreendedor</p><p>Formação, experiência, competências, projetos e certificações legítimas num perfil partilhável.</p><div class="chips"><span>Excel</span><span>Análise de Dados</span><span>Marketing</span><span>Comunicação</span></div></div></div>
+</section>
+
+<section id="videos" class="section"><div class="section-head"><p class="eyebrow">LEGADO TV</p><h2>Aprende e evolui</h2></div>
+  <div class="grid video-grid"><article class="video"><div class="play">▶</div><h3>Como criar um currículo forte</h3><p>Carreira</p></article><article class="video"><div class="play">▶</div><h3>Primeiros passos na análise de dados</h3><p>Tecnologia</p></article><article class="video"><div class="play">▶</div><h3>Motivação para continuar</h3><p>Desenvolvimento pessoal</p></article></div>
+</section>
+
+<section id="comunidade" class="section dark"><div class="section-head"><p class="eyebrow">COMUNIDADE</p><h2>Conversa, partilha e cresce</h2><p>Na versão completa, clientes poderão criar publicações, comentar, enviar mensagens e partilhar oportunidades.</p></div><div class="community"><div><b>💬 Chat</b><p>Atendimento e mensagens internas.</p></div><div><b>📄 Documentos</b><p>Envio seguro de ficheiros para pedidos.</p></div><div><b>📢 Publicidade</b><p>Empresas poderão anunciar após aprovação.</p></div></div></section>
+
+<section id="contacto" class="section contact"><div><p class="eyebrow">ATENDIMENTO</p><h2>Fala com o Legado Profissional AO</h2><p>WhatsApp: <b>+244 946 824 622</b></p><a class="btn primary" href="https://wa.me/244946824622?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20Legado%20Profissional%20AO." target="_blank" rel="noopener">Falar no WhatsApp</a></div><div class="contact-box"><h3>Próximo passo</h3><p>Cria a tua conta, escolhe o serviço e acompanha o pedido. A integração de pagamentos e base de dados será adicionada na versão de produção.</p></div></section>
+</main>
+
+<footer><div class="brand"><img src="favicon.svg" alt=""> <span>LEGADO <b>PROFISSIONAL</b> AO</span></div><p>© 2026 Legado Profissional AO. Todos os direitos reservados.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
